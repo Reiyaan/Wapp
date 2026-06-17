@@ -5,5 +5,5 @@
   tasks:
      - name: Copy War File To Tomcat
        copy:
-         src: "{{ lookup('env', 'WORKSPACE') }}/target/Wapp.war"
-         dest: "/opt/tomcat/webapps/Wapp.war"
+         src: "{{ lookup('env', 'WORKSPACE') }}/target/Wapp-1.0-SNAPSHOT.war"
+         dest: "/opt/tomcat/webapps/Wapp-1.0-SNAPSHOT.war"
