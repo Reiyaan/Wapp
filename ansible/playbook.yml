@@ -1,0 +1,9 @@
+-name: Copy War File
+ hosts: web
+ become: yes
+ 
+ tasks:
+  -name: Copy War File To Tomcat
+   copy:
+     src: "{{ lookup('env', 'WORKSPACE') }}/target/Wapp.war"
+     dest: "/opt/tomcat/webapps/Wapp.war"
