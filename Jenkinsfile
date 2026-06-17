@@ -23,7 +23,7 @@ pipeline {
     
       steps {
       
-         archiveArtifacts artifacts: 'target/*.war'
+         archiveArtifacts artifacts: 'target/*.war , fingerprint:true'
         
         
      }
